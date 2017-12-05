@@ -14,8 +14,8 @@ import math
 
 start = timeit.default_timer()
 
-ITERATIONS = 1
-TOTAL_HOUSES = 60
+ITERATIONS = 10000
+TOTAL_HOUSES = 20
 X_DIMENSION = 360
 Y_DIMENSION = 320
 best_iteration = 0
@@ -313,7 +313,7 @@ if __name__ == "__main__":
 					drawBuilding(building, building.left_bottom[0], building.left_bottom[1], 'green')
 
 			# safe figure
-			fig1.savefig('best_random.png', dpi=90, bbox_inches='tight')
+			fig1.savefig('20_best_10D.png', dpi=90, bbox_inches='tight')
 
 		print total_value
 		print best_iteration
